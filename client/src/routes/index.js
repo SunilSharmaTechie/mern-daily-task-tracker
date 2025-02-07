@@ -1,5 +1,4 @@
-// client-jsx/src/routes.js
-const Routes = {
+const RoutesConfig = {
   home: "/",
   login: "/login",
   register: "/register",
@@ -7,4 +6,4 @@ const Routes = {
   taskDetails: (slug) => `/task/${slug}`,
 };
 
-export default Routes;
+export default RoutesConfig;
