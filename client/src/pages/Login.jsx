@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '@/api/axios';
 import Routes from '@/routes';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
 
 const Login = () => {
   const { t } = useTranslation();
@@ -20,10 +21,13 @@ const Login = () => {
       const response = await api.post('/auth/login', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
+      toast.success(t('login.success') || 'Login successful');
       navigate(Routes.home);
     } catch (err) {
       console.error(err);
-      setError(err.response?.data?.message || 'Login failed');
+      const errorMsg = err.response?.data?.message || 'Login failed';
+      toast.error(errorMsg);
+      setError(errorMsg || 'Login failed');
     }
   };
 

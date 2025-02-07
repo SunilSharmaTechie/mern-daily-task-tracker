@@ -22,6 +22,7 @@
         "formTitle": "Title",
         "formDescription": "Description",
         "formDetails": "Details (optional)",
+        "success": "Task created successfully",
         "submit": "Create Task"
     },
     "login": {
@@ -29,6 +30,7 @@
         "email": "Email",
         "password": "Password",
         "submit": "Login",
+        "success": "Login successful",
         "noAccount": "Don't have an account? Register"
     },
     "register": {
@@ -37,6 +39,7 @@
         "email": "Email",
         "password": "Password",
         "submit": "Register",
+        "success": "Registration successful",
         "alreadyAccount": "Already have an account? Login"
     },
     "error": {

@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import api from '@/api/axios';
 import Header from '@/layouts/Header';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
 
 const CreateTask = () => {
   const { t } = useTranslation();
@@ -26,6 +27,7 @@ const CreateTask = () => {
     }
     try {
       await api.post('/tasks', formData);
+      toast.success(t('createTask.success') || 'Task created successfully.');
       navigate('/');
     } catch (err) {
       console.error(err);

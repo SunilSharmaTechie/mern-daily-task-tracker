@@ -3,6 +3,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import api from '@/api/axios';
 import Routes from '@/routes';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
 
 const Register = () => {
   const { t } = useTranslation();
@@ -20,10 +21,12 @@ const Register = () => {
       const response = await api.post('/auth/register', formData);
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
+      toast.success(t('register.success') || 'Registration successful');
       navigate(Routes.home);
     } catch (err) {
       console.error(err);
-      setError(err.response?.data?.message || 'Registration failed');
+      const errorMsg = err.response?.data?.message || 'Registration failed';
+      setError(errorMsg);
     }
   };
 
