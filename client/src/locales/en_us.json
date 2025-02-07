@@ -1,0 +1,45 @@
+{
+    "header": {
+        "title": "Task Tracker",
+        "greeting": "Hello, {{name}}",
+        "logout": "Logout",
+        "createTask": "Create Task"
+    },
+    "taskList": {
+        "title": "Task List",
+        "noTasks": "No tasks available.",
+        "createOne": "Create One",
+        "viewDetails": "View Details"
+    },
+    "taskDetails": {
+        "loading": "Loading...",
+        "notFound": "Task not found",
+        "back": "Back to Task List",
+        "details": "Details"
+    },
+    "createTask": {
+        "title": "Create New Task",
+        "formTitle": "Title",
+        "formDescription": "Description",
+        "formDetails": "Details (optional)",
+        "submit": "Create Task"
+    },
+    "login": {
+        "title": "Login",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Login",
+        "noAccount": "Don't have an account? Register"
+    },
+    "register": {
+        "title": "Register",
+        "name": "Name",
+        "email": "Email",
+        "password": "Password",
+        "submit": "Register",
+        "alreadyAccount": "Already have an account? Login"
+    },
+    "error": {
+        "fieldRequired": "fields are required"
+    }
+}

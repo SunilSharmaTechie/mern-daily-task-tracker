@@ -1,0 +1,44 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "Backend for the MERN Daily Task Tracker application with authentication and social login",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "express-async-handler": "^1.2.0",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.10.0",
+        "passport": "^0.7.0",
+        "passport-facebook": "^3.0.0",
+        "passport-google-oauth20": "^2.0.0",
+        "passport-local": "^1.0.0",
+        "swagger-jsdoc": "^6.2.8",
+        "swagger-ui-express": "^5.0.1"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.9"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "server.js",
+            "routes",
+            "config"
+        ],
+        "ext": "js,json",
+        "exec": "node server.js",
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "cwd": "."
+    },
+    "author": "Sunil Sharma",
+    "license": "ISC"
+}
