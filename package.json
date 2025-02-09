@@ -11,14 +11,7 @@
         "install": "pnpm install",
         "dev": "concurrently \"pnpm --filter client dev\" \"pnpm --filter server dev\"",
         "build": "concurrently \"pnpm --filter client build\" \"pnpm --filter server build\"",
-        "start": "concurrently \"pnpm --filter client preview\" \"pnpm --filter server start\"",
-        "test": "concurrently \"pnpm --filter client test\" \"pnpm --filter server test\"",
-        "lint": "concurrently \"pnpm --filter client lint\" \"pnpm --filter server lint\"",
-        "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css,scss}\"",
-        "clean": "rimraf node_modules client/node_modules server/node_modules",
-        "db:migrate": "pnpm --filter server run migrate",
-        "db:seed": "pnpm --filter server run seed",
-        "db:reset": "pnpm run clean && pnpm run db:migrate && pnpm run db:seed"
+        "start": "concurrently \"pnpm --filter client preview\" \"pnpm --filter server start\""
     },
     "dependencies": {
         "concurrently": "^9.1.2",
