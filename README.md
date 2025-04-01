@@ -357,7 +357,7 @@ This project is licensed under the **[MIT License](LICENSE)**.
 
 ## 📞 Contact
 
-- **GitHub:** [SunilITXpert](**https://github.com/SunilITXpert**)
+- **GitHub:** [SunilSharmaTechie](**https://github.com/SunilITXpert**)
 - **Email:** ✉️ [sunil2342@gmail.com](mailto:sunil2342@gmail.com)
 
 ---
